@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #252934;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.page-wrapper {
+  height: auto;
+  position: relative;
+}
+
+.back-to-top {
+  display: none;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 30px 0;
+  padding: 10px;
+  position: fixed;
+  z-index: 99;
+  border: 0;
+  background-color: #b4d0e7;
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+.back-to-top:hover {
+  opacity: 0.85;
+}
+
+/* Here I tried to prevent my bg image from streching. */
+section:first-of-type {
+  position: relative;
+  background-image: url("../images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+	background-attachment: fixed;
+  width: 100%;
+	margin-bottom: 0;
+}
+.title-box {
+  color: white;
+  height: auto;
+  width: 50%;
+  min-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-link {
+  width: 150px;
+  margin: 40px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+
+
+
+.navbar {
+	background-color: #61082b;
+	width: 100%;
+	height: auto;
+	align-self: flex-start;
+	border-bottom: 3px solid #b4d0e7;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+}
+.navbar ul {
+	display: flex;
+	flex-direction: row;
+}
+.navbar li {
+	padding: 18px 10px;
+}
+.navbar a {
+	padding: 15px 15px;
+	transition: color .2s;
+}
+.navbar a:hover {
+	color: #b4d0e7;
+}
+
+
+
+.header-bar {
+	background-color: #252934;
+	height: 5px;
+	width: 80px;
+	margin-bottom: 80px;
+}
+#features {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+.half {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+  margin-bottom: 50px;
+}
+.half:last-child {
+  margin-bottom: 0;
+}
+.feature-box {
+	margin: 10px;
+	text-align: center;
+	width: 100%;
+	min-width: 300px;
+}
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100px;
+	width: 100px;
+	background-color: #61082b;
+	border-radius: 100%;
+	margin: 20px auto;
+}
+.image-box a {
+  font-size: 2.5em;
+}
+.feature-box p {
+	margin-top: 20px;
+}
+
+
+
+
+.contact {
+	background-color: #61082b;
+	margin-bottom: 0;
+	height: 80vh;
+}
+.contact .header-bar {
+	background-color: white;
+}
+.contact p {
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 60px;
+}
+.contact h2 {
+	color: white;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	min-width: 400px;
+}
+input {
+	font-family: 'Raleway';
+	background-color: #b4d0e7;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	color: #252934;
+	border: 2px solid white;
+}
+form button {
+	align-self: flex-end;
+	padding: 10px 15px;
+	color: white;
+	font-size: 0.9em;
+	font-weight: 400;
+	cursor: pointer;
+	background-color: inherit;
+	width: auto;
+	font-family: 'Raleway';
+}
+
+
+
+footer {
+	background-color: #252934;
+	height: 195px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p {
+	color: #616161;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+}
+.social .fa {
+	padding: 13px 16px;
+	margin: 0 10px;
+	transition: background-color .2s;
+}
+.fa:hover {
+  color: #61082b;
+}
+.social a {
+	font-size: 3em;
+}
+.social .fa:hover {
+	color: #b4d0e7;
+}
+
+
+
+/* Global */
+.page-wrapper section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.page-wrapper section:last-of-type {
+  margin-bottom: 0;
+  height: 83vh;
+}
+h1 {
+  font-size: 3em;
+	font-weight:500;
+}
+h1 span {
+  font-size: 1.3em;
+}
+h2 {
+	color: #252934;
+	margin-top: 80px;
+	margin-bottom: 12px;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 1.35em;
+	font-weight: 700;
+}
+p {
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+.btn {
+  border: 2px solid white;
+  transition: background-color .3s;
+}
+.btn:hover {
+  background-color: #b4d0e7;
+  border-color: #b4d0e7;
+	color: #61082b;
+}
+a {
+  text-decoration: none;
+  color: white;
+	font-size: 0.9em;
+}
+#copyright {
+	margin-top: 30px;
+}
+
+
+
+/* @media only screen and (min-width:1200px) {
+  #features {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width:620px) {
+  .half {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #about {
+    height: auto;
+  }
+} */
